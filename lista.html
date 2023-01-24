@@ -55,12 +55,41 @@ img{
   width: 350px; ;
   height: 500px; ;
 }
+footer 
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
 </style>
 </head>
 <body style="font-family:Verdana;color:#2ffe00;" bgcolor="grey">
 
 <div style="background-color:#282a28d2;padding:15px;text-align:center;">
-  <h1>Szia Fiam</h1>
+  <h1>Lista</h1>
 </div>
 
 <div style="overflow:auto">
@@ -72,51 +101,22 @@ img{
     <a href="urlam.html">Pizza rendelés</a>
     <a href="evszak.html">Évszakok</a>
   </div>
-  <form action="javascript:void(0)">
-    <fieldset>
-        <legend>Egyszerű számológép program</legend>
-                <input type="number" name="szam"id="szam1" placeholder="SZÁM 1"> .
-                <input type="number" name="szam"id="szam2" placeholder="SZÁM 2"> =
-                <input type="text" id="eredmeny" placeholder="eredmeny" readonly> 
-                <br><br>
-                <label for="muv">Művelet</label>
-                <input type="button" name="muv" value="+" onclick="ad()">
-                <input type="button" name="muv" value="-" onclick="kiv()">
-                <input type="button" name="muv" value="x" onclick="szor()">
-                <input type="button" name="muv" value=":" onclick="oszt()">
-                <input type="reset" name="muv" value="DEL">
-    </fieldset>
-  </form>
-  <script>
-        function ad() {
-                  eredmeny.value =Number(szam1.value) + Number(szam2.value);
-        }
-
-        function kiv() {
-                  eredmeny.value =Number(szam1.value) - Number(szam2.value);
-        }
-
-        function szor() {
-                  eredmeny.value =Number(szam1.value) * Number(szam2.value);
-        }
-
-        function oszt() {
-                  eredmeny.value =Number(szam1.value) / Number(szam2.value);
-        }
-</script>
-
-
-
-
-
 
   <div class="main">
-    <h1>Laczkó Dániel</h1>
-    <h2>Laczkó Dániel</h2>
-    <h3>Laczkó Dániel</h3>
-    <h4>Laczkó Dániel</h4>
-    <h5>Laczkó Dániel</h5>
-    <h6>Laczkó Dániel</h6>
+    <h1 style="color:blueviolet;">Széplaki Armand</h1>
+    <h2 style="color:green;">Lista</h2>
+    <p style="background-color:palevioletred; width: 300px;">A kedvenc tantárgyaim:</p>
+    <ol s6tyle="color:rgb(99, 26, 71);">
+    <li>IKT PROJEKTMUNKA</li>
+    <li>TESTNEVELÉS</li>
+    <li>MATEK</li>
+    </ol>
+    <p style="background-color:slateblue; color:rgb(255, 255, 255); width: 300px;">A kedvenc szabadidős tevékenységeim:</p>
+    <ul style="color:rgb(56, 71, 120);">
+    <li type="circle">MOTOROZÁS</li>
+    <li type="disc">Quadozás</li>
+    <li type="square">PINPONGOZÁS</li>
+    </ul>
   </div>
 
   <div class="right">
@@ -127,8 +127,7 @@ img{
 
 <div>
   <footer>
-    <h3><p>Laczkó Dániel sulis email címe:<br>
-    <a href="mailto: laczkod@kkszki.hu">laczkod@kkszki.hu</a></p></h3>
+    
   </footer>
 </div>
 
