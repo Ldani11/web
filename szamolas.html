@@ -13,16 +13,65 @@
     </style>
 </head>
 <body>
+
     <div style="overflow:auto">
         <div class="menu">
           <a href="evszak.html">home</a>
           <a href="index.html">Kép+Link</a>
           <a href="keplin.html">Évszakok</a>
-          <a href="lista.html">Listák</a>
           <a href="orarend.html">Órarend</a>
-          <a href="urlam.html">Űrlap</a>
-         
-          </div>
+          <a href="urlam.html">Űrlap</a>     
+    </div>
+
+
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+        
+        .menu a {
+          background-color: #c0cabe;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: rgb(255, 0, 0);
+        }
+        
+        .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+        
+        .right {
+          background-color: #ffffff;
+          float: left;
+          width: 20%;
+          padding: 15px;
+          margin-top: 7px;
+          text-align: center;
+        }
+        
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+        img{
+          width: 800px; ;
+          height: 550px; ;
+        }
+        </style>
+
  <h1>Derékszögű Háromszög rajzolása</h1>
  <form action="javascript:void(0)">
     <fieldset style="width: 50%;">
